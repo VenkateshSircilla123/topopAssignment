@@ -1,0 +1,9 @@
+.roundImage {
+  border-radius: 100%;
+}
+.hide {
+  display: none;
+}
+input {
+  border-color: #bec6d7;
+}
