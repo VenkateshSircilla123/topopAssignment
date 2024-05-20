@@ -3,6 +3,6 @@ import { createqr, getqr } from "../controllers/qrController.js";
 
 const router = Router();
 router.post("/gen", createqr);
-router.get("/user/:id", getqr);
+router.get("/:id", getqr);
 
 export default router;
