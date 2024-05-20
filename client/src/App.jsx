@@ -4,6 +4,7 @@ import SignUpPage from "./pages/SignUpPage";
 import LoginPage from "./pages/LoginPage";
 import UserProfileInfo from "./pages/UserProfileInfo";
 import HomePage from "./pages/HomePage";
+import Templete from "./pages/templete/Templete";
 function App() {
   const data = JSON.parse(localStorage.getItem("user"));
   return (
@@ -15,9 +16,10 @@ function App() {
             path="/login"
             element={data ? <HomePage /> : <LoginPage />}
           ></Route>
-          <Route path="/users/:id" element={<UserProfileInfo />} />
+          <Route path="/users/:id" element={<Templete />} />
         </Routes>
       </BrowserRouter>
+      {/* <Templete /> */}
     </div>
   );
 }
