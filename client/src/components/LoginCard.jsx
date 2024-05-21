@@ -31,7 +31,7 @@ const LoginCard = () => {
       });
 
     const user = await axios.post(
-      `http://localhost:8000/users/login`,
+      `https://topopassignment.onrender.com/users/login`,
       userData
     );
   };
@@ -59,7 +59,7 @@ const LoginCard = () => {
 
         const qr = await axios({
           method: "post",
-          baseURL: "http://localhost:8000",
+          baseURL: "https://topopassignment.onrender.com",
           url: "/qr/gen",
           data: user,
         });

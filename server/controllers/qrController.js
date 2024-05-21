@@ -3,7 +3,7 @@ import QRCode from "qrcode";
 export const createqr = async (req, res) => {
   try {
     const qrCodeImage = await QRCode.toDataURL(
-      `http://localhost:8000/users/${req.body.uid}`
+      `https://topopassignment.onrender.com/users/${req.body.uid}`
     );
     console.log(req.body);
     const qr = new QrCode({

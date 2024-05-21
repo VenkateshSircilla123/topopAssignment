@@ -15,7 +15,7 @@ export const createUser = async (req, res) => {
     console.log(user);
     if (user) {
       const qrCodeImage = await QRCode.toDataURL(
-        `http://localhost:8000/users/${user._id}`
+        `https://topopassignment.onrender.com/users/${user._id}`
       );
       const qr = new QrCode({
         userId: user._id,
