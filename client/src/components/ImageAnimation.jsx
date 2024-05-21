@@ -6,7 +6,7 @@ const ImageAnimation = () => {
     <motion.div variants={fadeIn("up", "spring", 0, 0.75)}>
       <Tilt
         options={{
-          reverse: false,
+          reverse: true,
           max: 45,
           scale: 1,
           speed: 450,
