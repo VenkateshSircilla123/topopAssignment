@@ -7,7 +7,7 @@ const UserProfileInfo = () => {
   const [userData, setUserData] = useState(null);
   useEffect(() => {
     const user = axios
-      .get(`http://localhost:8000/users/user/${id}`)
+      .get(`https://topopassignment.onrender.com/users/user/${id}`)
       .then(function (response) {
         // handle success
         setUserData(response.data);
