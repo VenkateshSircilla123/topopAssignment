@@ -49,7 +49,7 @@ const SignupCard = () => {
         //this will get the qr data from the database using user's id
         const qr = await axios({
           method: "post",
-          baseURL: "http://localhost:8000",
+          baseURL: "https://topopassignment.onrender.com",
           url: "/qr/gen",
           data: user,
         });
@@ -138,7 +138,7 @@ const SignupCard = () => {
 
       const user = await axios({
         method: "post",
-        baseURL: "http://localhost:8000",
+        baseURL: "https://topopassignment.onrender.com",
         url: "/users/register",
         data: userData,
       });
